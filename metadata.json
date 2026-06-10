@@ -1,0 +1,6 @@
+{
+  "name": "BĐS Hoa Nguyễn",
+  "description": "Landing page giới thiệu bất động sản hiện đại, tích hợp bản đồ, form liên hệ nhanh và tính năng đăng tin bán và giới thiệu đất đai.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
