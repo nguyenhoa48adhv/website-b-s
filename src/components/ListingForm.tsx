@@ -100,11 +100,11 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
         {/* Header */}
         <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white p-6 flex justify-between items-center shrink-0 shadow-md">
           <div>
-            <span className="text-white/90 font-mono font-extrabold uppercase text-[10px] tracking-widest flex items-center gap-1.5">
+            <span className="text-white/90 font-mono font-extrabold text-[10px] tracking-widest flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-white animate-pulse" />
-              Đăng Tin Bán Đất Ký Gửi Miễn Phí Tại BĐS Hoa Nguyễn
+              Đăng tin bán đất ký gửi miễn phí tại BĐS Hoa Nguyễn
             </span>
-            <h3 className="text-lg sm:text-xl font-black font-display uppercase tracking-tight">Ký gửi bất động sản chính chủ</h3>
+            <h3 className="text-lg sm:text-xl font-black font-display tracking-tight">Ký gửi bất động sản chính chủ</h3>
           </div>
           <button
             id="btn-close-listing-form"
@@ -120,12 +120,12 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
           
           {/* Section 1: Cần bán */}
           <div>
-            <span className="text-xs font-black text-slate-500 uppercase tracking-widest block mb-4 border-b border-orange-50 pb-2 font-display">
-              1. Thông Tin Tiêu Đề & LoạIi Đất
+            <span className="text-xs font-black text-slate-500 tracking-widest block mb-4 border-b border-orange-50 pb-2 font-display">
+              1. Thông tin tiêu đề & loại đất
             </span>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="col-span-1 md:col-span-2 space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Tiêu Đề Đăng Bài (*) :</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Tiêu đề đăng bài (*):</label>
                 <input
                   type="text"
                   required
@@ -137,7 +137,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
               </div>
 
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Loại Hình Đất (*):</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Loại hình đất (*):</label>
                 <select
                   value={type}
                   onChange={(e) => setType(e.target.value as PropertyType)}
@@ -154,12 +154,12 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
 
           {/* Section 2: Thông tin chi tiết */}
           <div>
-            <span className="text-xs font-black text-slate-500 uppercase tracking-widest block mb-4 border-b border-orange-50 pb-2 font-display">
-              2. Diện Tích & Định Giá
+            <span className="text-xs font-black text-slate-500 tracking-widest block mb-4 border-b border-orange-50 pb-2 font-display">
+              2. Diện tích & Định giá
             </span>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Giá Hiển Thị (*):</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Giá hiển thị (*):</label>
                 <input
                   type="text"
                   required
@@ -171,7 +171,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
               </div>
 
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Giá Lọc (Tỷ VNĐ) (*):</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Giá lọc (Tỷ VNĐ) (*):</label>
                 <input
                   type="number"
                   step="0.05"
@@ -183,7 +183,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
               </div>
 
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Diện tích m² (*):</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Diện tích m² (*):</label>
                 <input
                   type="number"
                   required
@@ -194,7 +194,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
               </div>
 
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Hướng Đất:</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Hướng đất:</label>
                 <input
                   type="text"
                   placeholder="Đông Nam, Tây, ..."
@@ -205,7 +205,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
               </div>
 
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Mặt Tiền m:</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Mặt tiền m:</label>
                 <input
                   type="number"
                   placeholder="Ví dụ: 5"
@@ -216,7 +216,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
               </div>
 
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Chiều Sâu m:</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Chiều sâu m:</label>
                 <input
                   type="number"
                   placeholder="Ví dụ: 20"
@@ -227,7 +227,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
               </div>
 
               <div className="col-span-2 space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Pháp lý thửa đất:</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Pháp lý thửa đất:</label>
                 <input
                   type="text"
                   placeholder="Sổ đỏ chính chủ, Sổ đỏ riêng..."
@@ -242,11 +242,11 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
           {/* Section 3: Vị trí và Toạ độ quy hoạch */}
           <div>
             <div className="flex justify-between items-center mb-4 border-b border-orange-50 pb-2">
-              <span className="text-xs font-black text-slate-500 uppercase tracking-widest block font-display">
-                3. Địa Điểm & Định Vị Quy Hoạch
+              <span className="text-xs font-black text-slate-500 tracking-widest block font-display">
+                3. Địa điểm & Định vị quy hoạch
               </span>
               {pinnedCoordinates && (
-                <span className="bg-[#E9825E] text-white px-3.5 py-1.5 rounded-full font-mono text-[9px] uppercase font-bold shadow-sm animate-pulse">
+                <span className="bg-[#E9825E] text-white px-3.5 py-1.5 rounded-full font-mono text-[9px] font-bold shadow-sm animate-pulse">
                   Đã khóa tọa độ ghim bản đồ
                 </span>
               )}
@@ -254,7 +254,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
             
             <div className="space-y-3">
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Địa chỉ Thửa đất (*) :</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Địa chỉ thửa đất (*):</label>
                 <input
                   type="text"
                   required
@@ -268,7 +268,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <div className="flex items-center justify-between">
-                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Kinh độ (Longitude) (*):</label>
+                    <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Kinh độ (Longitude) (*):</label>
                     <span className="text-[9px] text-slate-400 font-mono">Khoảng 108.15 - 108.35</span>
                   </div>
                   <input
@@ -283,7 +283,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
 
                 <div className="space-y-1">
                   <div className="flex items-center justify-between">
-                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Vĩ độ (Latitude) (*):</label>
+                    <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Vĩ độ (Latitude) (*):</label>
                     <span className="text-[9px] text-slate-400 font-mono">Khoảng 15.90 - 16.10</span>
                   </div>
                   <input
@@ -301,8 +301,8 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
 
           {/* Section 4: Hình ảnh đất */}
           <div>
-            <span className="text-xs font-black text-slate-500 uppercase tracking-widest block mb-4 border-b border-orange-50 pb-2 font-display">
-              4. Hình Ảnh Thực Tế Đất
+            <span className="text-xs font-black text-slate-500 tracking-widest block mb-4 border-b border-orange-50 pb-2 font-display">
+              4. Hình ảnh thực tế đất
             </span>
             <div className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -321,8 +321,8 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
                     {imageOption === 'preset-1' && <div className="w-2 h-2 rounded-full bg-orange-500" />}
                   </div>
                   <div className="text-left">
-                    <span className="block text-xs font-extrabold uppercase tracking-tight">Lô bờ sông</span>
-                    <span className="text-[9px] text-slate-400 font-mono">HQ PRESET</span>
+                    <span className="block text-xs font-extrabold tracking-tight">Lô bờ sông</span>
+                    <span className="text-[9px] text-slate-400 font-mono">Hòa Nguyễn preset</span>
                   </div>
                 </label>
 
@@ -341,8 +341,8 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
                     {imageOption === 'preset-2' && <div className="w-2 h-2 rounded-full bg-orange-500" />}
                   </div>
                   <div className="text-left">
-                    <span className="block text-xs font-extrabold uppercase tracking-tight">KĐT Dự Án</span>
-                    <span className="text-[9px] text-slate-400 font-mono">HQ PRESET</span>
+                    <span className="block text-xs font-extrabold tracking-tight">KĐT dự án</span>
+                    <span className="text-[9px] text-slate-400 font-mono">Hòa Nguyễn preset</span>
                   </div>
                 </label>
 
@@ -361,8 +361,8 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
                     {imageOption === 'preset-3' && <div className="w-2 h-2 rounded-full bg-orange-500" />}
                   </div>
                   <div className="text-left">
-                    <span className="block text-xs font-extrabold uppercase tracking-tight">Biệt thự</span>
-                    <span className="text-[9px] text-slate-400 font-mono">HQ PRESET</span>
+                    <span className="block text-xs font-extrabold tracking-tight">Biệt thự</span>
+                    <span className="text-[9px] text-slate-400 font-mono">Hòa Nguyễn preset</span>
                   </div>
                 </label>
 
@@ -381,15 +381,15 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
                     {imageOption === 'upload' && <div className="w-2 h-2 rounded-full bg-orange-500" />}
                   </div>
                   <div className="text-left">
-                    <span className="block text-xs font-extrabold uppercase tracking-tight">Link ảnh khác</span>
-                    <span className="text-[9px] text-slate-400 font-mono">ENTER URL</span>
+                    <span className="block text-xs font-extrabold tracking-tight">Link ảnh khác</span>
+                    <span className="text-[9px] text-slate-400 font-mono">Nhập link URL</span>
                   </div>
                 </label>
               </div>
 
               {imageOption === 'upload' && (
                 <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Địa chỉ Link hình ảnh (URL) (*):</label>
+                  <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Địa chỉ link hình ảnh (URL) (*):</label>
                   <input
                     type="url"
                     required={imageOption === 'upload'}
@@ -405,12 +405,12 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
 
           {/* Section 5: Giới thiệu bài viết & Liên hệ */}
           <div>
-            <span className="text-xs font-black text-slate-500 uppercase tracking-widest block mb-4 border-b border-orange-50 pb-2 font-display">
-              5. Giới Thiệu Lô Đất & Thông Tin Liên Hệ Để Ký Gửi
+            <span className="text-xs font-black text-slate-500 tracking-widest block mb-4 border-b border-orange-50 pb-2 font-display">
+              5. Giới thiệu lô đất & Thông tin liên hệ ký gửi
             </span>
             <div className="space-y-4">
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Đặc điểm nổi bật & Giới thiệu lô đất (*) :</label>
+                <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Đặc điểm nổi bật & Giới thiệu lô đất (*):</label>
                 <textarea
                   rows={4}
                   required
@@ -423,7 +423,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Họ và tên chủ sở hữu / Người liên hệ (*):</label>
+                  <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Họ và tên chủ sở hữu / Người liên hệ (*):</label>
                   <input
                     type="text"
                     required
@@ -435,7 +435,7 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Số điện thoại liên hệ nhanh (*) :</label>
+                  <label className="text-[10px] font-bold text-slate-500 tracking-wider block">Số điện thoại liên hệ nhanh (*):</label>
                   <input
                     type="tel"
                     required
@@ -455,14 +455,14 @@ export default function ListingForm({ onAddListing, onClose, pinnedCoordinates }
               type="button"
               id="btn-form-cancel"
               onClick={onClose}
-              className="px-6 py-3.5 rounded-full border border-orange-200 text-slate-700 bg-white hover:bg-orange-50/30 font-bold uppercase tracking-wider text-xs transition-colors cursor-pointer"
+              className="px-6 py-3.5 rounded-full border border-orange-200 text-slate-700 bg-white hover:bg-orange-50/30 font-bold tracking-wider text-xs transition-colors cursor-pointer"
             >
               Hủy tin đăng
             </button>
             <button
               type="submit"
               id="btn-form-submit"
-              className="bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white px-8 py-3.5 rounded-full font-bold uppercase tracking-wider text-xs shadow-lg shadow-orange-500/20 active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
+              className="bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white px-8 py-3.5 rounded-full font-bold tracking-wider text-xs shadow-lg shadow-orange-500/20 active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
             >
               <Save className="w-4 h-4" />
               Lưu & Đăng Tin Lên Bản Đồ

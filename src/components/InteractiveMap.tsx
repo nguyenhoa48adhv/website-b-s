@@ -599,16 +599,16 @@ export default function InteractiveMap({
           <div className="absolute bottom-4 right-4 z-30 bg-white/95 backdrop-blur-sm px-4 py-3.5 rounded-2xl border border-orange-100/60 shadow-xl max-w-xs text-[11px] leading-relaxed text-slate-800 text-left">
             {selectedListing ? (
               <div>
-                <span className="font-extrabold text-orange-600 block text-xs truncate mb-1 uppercase tracking-wider font-display">{selectedListing.title}</span>
-                <span className="block text-slate-550 font-mono text-[9px]">VỊ TRÍ: {selectedListing.location}</span>
+                <span className="font-extrabold text-orange-600 block text-xs truncate mb-1 font-display">{selectedListing.title}</span>
+                <span className="block text-slate-550 font-mono text-[9px]">Vị trí: {selectedListing.location}</span>
                 <span className="block mt-1.5 font-bold text-slate-700 border-t border-orange-100/50 pt-1.5">
-                  PHÁP LÝ: <span className="text-orange-650 font-mono text-[9px]">{selectedListing.legalStatus}</span>
+                  Pháp lý: <span className="text-orange-650 font-mono text-[9px]">{selectedListing.legalStatus}</span>
                 </span>
               </div>
             ) : pinModeActive ? (
               <div className="flex items-center gap-2 font-bold text-orange-700">
                 <span className="w-2.5 h-2.5 bg-orange-500 rounded-full animate-ping inline-block shrink-0" />
-                <span>Bạn đang mở <strong className="text-slate-900 uppercase font-mono text-[9px]">Lập toạ độ</strong>. Hãy click vào bản đồ để ghim.</span>
+                <span>Bạn đang mở <strong className="text-slate-900 font-mono text-[9px]">Lập toạ độ</strong>. Hãy click vào bản đồ để ghim.</span>
               </div>
             ) : (
               <div className="flex items-start gap-1.5 text-slate-500 font-bold">

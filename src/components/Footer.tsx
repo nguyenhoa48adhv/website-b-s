@@ -32,7 +32,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-xs text-orange-450 font-bold font-mono tracking-wider">
               <Award className="w-4 h-4 text-orange-400" />
-              <span>THƯƠNG HIỆU UY TÍN VÀNG VÌ NGƯỜI MUA CHÍNH CHỦ 2026</span>
+              <span>Thương hiệu uy tín vàng vì người mua chính chủ 2026</span>
             </div>
           </div>
 
@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="text-xs space-y-2.5 text-slate-400">
               <li>Thứ hai - Thứ sáu: <strong className="text-slate-200 font-mono">7:30 - 21:00</strong></li>
               <li>Thứ bảy - Chủ nhật: <strong className="text-slate-200 font-mono">8:00 - 18:00</strong></li>
-              <li>Xem thực địa thực tế: <strong className="text-orange-400 uppercase font-mono tracking-wide">Có xe đưa đón miễn phí</strong></li>
+              <li>Xem thực địa thực tế: <strong className="text-orange-400 font-mono tracking-wide">Có xe đưa đón miễn phí</strong></li>
             </ul>
           </div>
 

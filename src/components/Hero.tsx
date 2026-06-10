@@ -42,13 +42,13 @@ export default function Hero({ onSearch, totalListingsCount }: HeroProps) {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-white">
         <div className="max-w-3xl">
           {/* Tag */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-rose-500/10 border border-orange-500/35 text-orange-250 text-[10px] font-bold uppercase tracking-widest mb-6 animate-fade-in font-mono shadow-inner">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-rose-500/10 border border-orange-500/35 text-orange-250 text-[10px] font-bold tracking-widest mb-6 animate-fade-in font-mono shadow-inner">
             <Sparkles className="w-3.5 h-3.5 text-orange-450 animate-pulse" />
             Nhà môi giới chuyên nghiệp bất động sản uy tín Hà Tĩnh - Nghệ An
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight font-display uppercase leading-[1.1] mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight font-display leading-[1.1] mb-6">
             Kiến Tạo Tương Lai <br />
             <span className="text-transparent bg-gradient-to-r from-amber-400 via-orange-500 to-rose-400 bg-clip-text border-b-2 border-orange-455 pb-1 block sm:inline mt-1">
               Đất Lành Đón Lộc Tài
@@ -74,7 +74,7 @@ export default function Hero({ onSearch, totalListingsCount }: HeroProps) {
                   placeholder="Nhập khu vực, tên lô đất hoặc vị trí..."
                   value={searchText}
                   onChange={(e) => setSearchText(e.target.value)}
-                  className="w-full bg-slate-900/60 text-white placeholder-slate-450 pl-10 pr-4 py-3 rounded-full text-xs font-bold font-mono border border-slate-700/65 focus:border-orange-500/80 outline-none transition-all placeholder:font-sans placeholder:font-normal uppercase"
+                  className="w-full bg-slate-900/60 text-white placeholder-slate-450 pl-10 pr-4 py-3 rounded-full text-xs font-bold font-mono border border-slate-700/65 focus:border-orange-500/80 outline-none transition-all placeholder:font-sans placeholder:font-normal"
                 />
               </div>
 
@@ -82,7 +82,7 @@ export default function Hero({ onSearch, totalListingsCount }: HeroProps) {
                 <select
                   value={selectedType}
                   onChange={(e) => setSelectedType(e.target.value as PropertyType | 'all')}
-                  className="w-full bg-slate-900/60 text-white py-3 px-3 rounded-full text-xs font-bold border border-slate-700/65 focus:border-orange-500/85 outline-none cursor-pointer transition-all uppercase font-mono"
+                  className="w-full bg-slate-900/60 text-white py-3 px-3 rounded-full text-xs font-bold border border-slate-700/65 focus:border-orange-500/85 outline-none cursor-pointer transition-all font-mono"
                 >
                   <option value="all" className="bg-slate-900 text-xs text-white">Tất cả loại hình</option>
                   <option value="dat-tho-cu" className="bg-slate-900 text-xs text-white">Đất thổ cư</option>
@@ -97,7 +97,7 @@ export default function Hero({ onSearch, totalListingsCount }: HeroProps) {
                 id="btn-hero-search-submit"
                 className="bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-600 hover:via-orange-600 hover:to-rose-600 text-white px-7 py-3 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg shadow-orange-500/20 active:scale-95 transition-all cursor-pointer"
               >
-                Tự tìm kiếm
+                Tìm kiếm
               </button>
             </div>
           </form>
@@ -110,7 +110,7 @@ export default function Hero({ onSearch, totalListingsCount }: HeroProps) {
               </div>
               <div className="text-left">
                 <span className="block text-lg font-bold font-display tracking-tight text-white leading-none">100%</span>
-                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mt-1.5 leading-tight">Pháp lý có sổ riêng</span>
+                <span className="text-[10px] text-slate-400 font-bold tracking-wider block mt-1.5 leading-tight">Pháp lý có sổ riêng</span>
               </div>
             </div>
 
@@ -120,7 +120,7 @@ export default function Hero({ onSearch, totalListingsCount }: HeroProps) {
               </div>
               <div className="text-left">
                 <span className="block text-lg font-bold font-display tracking-tight text-white leading-none">850+</span>
-                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mt-1.5 leading-tight">Khách hàng tin chọn</span>
+                <span className="text-[10px] text-slate-400 font-bold tracking-wider block mt-1.5 leading-tight">Khách hàng tin chọn</span>
               </div>
             </div>
 
@@ -130,7 +130,7 @@ export default function Hero({ onSearch, totalListingsCount }: HeroProps) {
               </div>
               <div className="text-left">
                 <span className="block text-lg font-bold font-display tracking-tight text-white leading-none">{totalListingsCount}+</span>
-                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mt-1.5 leading-tight">Chính chủ ký gửi</span>
+                <span className="text-[10px] text-slate-400 font-bold tracking-wider block mt-1.5 leading-tight">Chính chủ ký gửi</span>
               </div>
             </div>
 
@@ -140,7 +140,7 @@ export default function Hero({ onSearch, totalListingsCount }: HeroProps) {
               </div>
               <div className="text-left">
                 <span className="block text-lg font-bold font-display tracking-tight text-white leading-none">0đ</span>
-                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mt-1.5 leading-tight">Xem quy hoạch free</span>
+                <span className="text-[10px] text-slate-400 font-bold tracking-wider block mt-1.5 leading-tight">Xem quy hoạch free</span>
               </div>
             </div>
           </div>

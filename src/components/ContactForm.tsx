@@ -104,10 +104,10 @@ export default function ContactForm({
         {/* Left Side: Contact Information & Smart Advisory Panel */}
         <div className="lg:col-span-2 space-y-8 text-left">
           <div>
-            <span className="text-orange-600 font-bold font-mono uppercase text-[10px] tracking-widest block mb-1">
+            <span className="text-orange-600 font-bold font-mono text-[10px] tracking-widest block mb-1">
               Hỗ Trợ Luôn Luôn Sẵn Sàng 24/7
             </span>
-            <h2 className="text-3xl font-black text-slate-850 tracking-tight font-display uppercase">
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-850 tracking-tight font-display">
               Liên Hệ & Đóng Góp Ký Gửi
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2 font-medium leading-relaxed">
@@ -122,7 +122,7 @@ export default function ContactForm({
                 <Phone className="w-5 h-5 text-orange-500" />
               </div>
               <div>
-                <span className="block text-slate-400 text-[10px] font-bold uppercase tracking-wider font-mono">Hotline Tư Vấn</span>
+                <span className="block text-slate-400 text-[10px] font-bold tracking-wider font-mono">Hotline tư vấn</span>
                 <span className="text-sm font-black text-slate-755">0896.234.822 (Zalo Hoa Nguyễn)</span>
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function ContactForm({
                 <Mail className="w-5 h-5 text-orange-500" />
               </div>
               <div>
-                <span className="block text-slate-400 text-[10px] font-bold uppercase tracking-wider font-mono">Hòm thư điện tử</span>
+                <span className="block text-slate-400 text-[10px] font-bold tracking-wider font-mono">Hòm thư điện tử</span>
                 <span className="text-sm font-bold text-slate-755 font-mono">nguyenhoa48adhv@gmail.com</span>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function ContactForm({
                 <MapPin className="w-5 h-5 text-orange-500" />
               </div>
               <div>
-                <span className="block text-slate-400 text-[10px] font-bold uppercase tracking-wider font-mono">Trụ sở chính</span>
+                <span className="block text-slate-400 text-[10px] font-bold tracking-wider font-mono">Trụ sở chính</span>
                 <span className="text-sm font-bold text-slate-755 leading-snug">Xã Nghi Xuân, tỉnh Hà Tĩnh</span>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function ContactForm({
               <span className="p-1.5 rounded-full bg-orange-50 text-orange-600">
                 <Sparkles className="w-3.5 h-3.5" />
               </span>
-              <span className="text-[10px] font-extrabold tracking-wider text-slate-700 font-mono uppercase">HỘP THƯ TRỢ LÝ PHÁP LÝ TỰ ĐỘNG</span>
+              <span className="text-[10px] font-extrabold tracking-wider text-slate-700 font-mono">Hộp thư Trợ lý Pháp lý Tự động</span>
             </div>
 
             {/* Answer Display */}
@@ -162,7 +162,7 @@ export default function ContactForm({
               {isAiLoading ? (
                 <div className="flex flex-col items-center justify-center gap-2 h-full py-8 text-orange-600 font-mono font-bold text-center">
                   <RefreshCw className="w-5 h-5 animate-spin mb-1" />
-                  <span>ĐANG TRA CỨU QUY HOẠCH HÀ TĨNH...</span>
+                  <span>Đang tra cứu quy hoạch Hà Tĩnh...</span>
                 </div>
               ) : (
                 aiAnswer
@@ -171,7 +171,7 @@ export default function ContactForm({
 
             {/* Clickable prompt chips */}
             <div className="mt-4 space-y-2">
-              <span className="text-[10px] text-slate-400 font-bold uppercase font-mono tracking-wider block text-left">Đề xuất tra cứu nhanh:</span>
+              <span className="text-[10px] text-slate-400 font-bold font-mono tracking-wider block text-left">Đề xuất tra cứu nhanh:</span>
               <div className="flex flex-wrap gap-1.5 justify-start">
                 <button
                   id="btn-ai-consult-phaply"
@@ -209,7 +209,7 @@ export default function ContactForm({
                 <CheckCircle2 className="w-9 h-9 stroke-[2.2] text-orange-500 animate-bounce" />
               </div>
               <div>
-                <h3 className="text-xl font-extrabold text-slate-900 mb-1 font-display uppercase tracking-tight">Gửi Yêu Cầu Thành Công!</h3>
+                <h3 className="text-xl font-extrabold text-slate-900 mb-1 font-display tracking-tight">Gửi yêu cầu thành công!</h3>
                 <p className="text-xs sm:text-sm text-slate-500 max-w-sm mx-auto leading-relaxed">
                   Cảm ơn <strong>{name || "Khách hàng"}</strong>. Hệ thống CRM của BĐS Hoa Nguyễn đã ghi nhận yêu cầu tư vấn. Chuyên viên sẽ trực tiếp điện thoại giải đáp cho bạn trong ít phút tới.
                 </p>
@@ -218,21 +218,21 @@ export default function ContactForm({
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4" id="consultation-form">
-              <span className="text-xs font-black uppercase tracking-widest text-[#E9825E] font-display block text-left mb-1.5 border-b pb-1.5 border-orange-50">
-                GỬI YÊU CẦU TƯ VẤN NGAY
+              <span className="text-xs font-black tracking-widest text-[#E9825E] font-display block text-left mb-1.5 border-b pb-1.5 border-orange-50">
+                Gửi yêu cầu tư vấn ngay
               </span>
 
               {/* Related Listing Indicator */}
               {selectedListingForInquiry && (
                 <div className="bg-orange-50/60 border border-orange-200/50 text-slate-800 p-4 rounded-2xl flex items-center justify-between gap-4 text-left shadow-sm">
                   <div className="truncate pr-2">
-                    <span className="text-[10px] font-bold text-orange-700 uppercase block font-mono">Thửa đất đặc biệt:</span>
-                    <span className="text-xs font-bold truncate block mt-0.5 uppercase tracking-wide">{selectedListingForInquiry.title}</span>
+                    <span className="text-[10px] font-bold text-orange-700 block font-mono">Thửa đất đặc biệt:</span>
+                    <span className="text-xs font-bold truncate block mt-0.5">{selectedListingForInquiry.title}</span>
                   </div>
                   <button
                     type="button"
                     onClick={clearSelectedListingInquiry}
-                    className="text-xs font-bold text-red-550 hover:text-red-700 font-mono uppercase underline shrink-0 cursor-pointer"
+                    className="text-xs font-bold text-red-550 hover:text-red-700 font-mono underline shrink-0 cursor-pointer"
                     title="Xóa lựa chọn thửa đất"
                   >
                     Hủy chọn
@@ -242,7 +242,7 @@ export default function ContactForm({
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-1 block text-left">
-                  <label className="text-[10px] font-bold text-slate-650 uppercase tracking-wider block">Tên của bạn (*):</label>
+                  <label className="text-[10px] font-bold text-slate-650 tracking-wider block">Tên của bạn (*):</label>
                   <input
                     type="text"
                     required
@@ -254,7 +254,7 @@ export default function ContactForm({
                 </div>
 
                 <div className="space-y-1 block text-left">
-                  <label className="text-[10px] font-bold text-slate-655 uppercase tracking-wider block">Số điện thoại (*):</label>
+                  <label className="text-[10px] font-bold text-slate-655 tracking-wider block">Số điện thoại (*):</label>
                   <input
                     type="tel"
                     required
@@ -268,22 +268,22 @@ export default function ContactForm({
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-1 block text-left">
-                  <label className="text-[10px] font-bold text-slate-655 uppercase tracking-wider block">Địa chỉ Email:</label>
+                  <label className="text-[10px] font-bold text-slate-655 tracking-wider block">Địa chỉ Email:</label>
                   <input
                     type="email"
                     placeholder="example@gmail.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-white border border-orange-100/60 rounded-2xl px-4 py-3 text-xs font-bold font-mono focus:border-orange-400 focus:ring-2 focus:ring-orange-100 outline-none transition-all shadow-sm text-slate-800"
+                    className="w-full bg-white border border-orange-100/60 rounded-xl px-2.5 py-2 text-xs font-bold font-mono focus:border-orange-400 focus:ring-2 focus:ring-orange-100 outline-none transition-all shadow-sm text-slate-800"
                   />
                 </div>
 
                 <div className="space-y-1 block text-left">
-                  <label className="text-[10px] font-bold text-slate-655 uppercase tracking-wider block">Hạng mục quan tâm cốt lõi:</label>
+                  <label className="text-[10px] font-bold text-slate-655 tracking-wider block">Hạng mục quan tâm cốt lõi:</label>
                   <select
                     value={interestListingId}
                     onChange={(e) => setInterestListingId(e.target.value)}
-                    className="w-full bg-white border border-orange-100/60 rounded-2xl px-4 py-3 text-xs font-bold font-mono focus:border-orange-400 focus:ring-2 focus:ring-orange-100 outline-none cursor-pointer transition-all shadow-sm text-slate-800"
+                    className="w-full bg-white border border-orange-100/60 rounded-xl px-2.5 py-2 text-xs font-bold font-mono focus:border-orange-400 focus:ring-2 focus:ring-orange-100 outline-none cursor-pointer transition-all shadow-sm text-slate-800"
                   >
                     <option value="general">Cần tư vấn thủ tục ký gửi đất nền</option>
                     <option value="legal">Tra cứu thông tin quy hoạch Hà Tĩnh & Nghệ An</option>
@@ -297,22 +297,22 @@ export default function ContactForm({
               </div>
 
               <div className="space-y-1 block text-left">
-                <label className="text-[10px] font-bold text-slate-655 uppercase tracking-wider block">Nội dung ghi chú yêu cầu tư vấn chi tiết:</label>
+                <label className="text-[10px] font-bold text-slate-655 tracking-wider block">Nội dung ghi chú yêu cầu tư vấn chi tiết:</label>
                 <textarea
                   rows={3}
                   placeholder="Gợi ý: Cần hẹn lịch xem đất ngày cuối tuần, thương lượng trực tiếp chủ, hỗ trợ đo đạc lại..."
                   value={messageText}
                   onChange={(e) => setMessageText(e.target.value)}
-                  className="w-full bg-white border border-orange-100/60 rounded-2xl px-4 py-3 text-xs font-bold font-mono focus:border-orange-400 focus:ring-2 focus:ring-orange-100 outline-none transition-all shadow-sm text-slate-800"
+                  className="w-full bg-white border border-orange-100/60 rounded-xl px-2.5 py-2 text-xs font-bold font-mono focus:border-orange-400 focus:ring-2 focus:ring-orange-100 outline-none transition-all shadow-sm text-slate-800"
                 />
               </div>
 
               <button
                 type="submit"
                 id="btn-consultation-submit"
-                className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white font-bold py-3.5 px-6 rounded-full text-xs uppercase tracking-widest font-mono shadow-lg shadow-orange-500/20 active:scale-95 transition-all cursor-pointer flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white font-bold py-3.5 px-6 rounded-full text-xs tracking-widest font-mono shadow-lg shadow-orange-500/20 active:scale-95 transition-all cursor-pointer flex items-center justify-center gap-2"
               >
-                GỬI ĐĂNG KÝ TƯ VẤN NGAY
+                Gửi đăng ký tư vấn ngay
                 <ArrowRight className="w-4 h-4" />
               </button>
 
