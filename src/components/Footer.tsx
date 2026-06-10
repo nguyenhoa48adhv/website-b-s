@@ -56,7 +56,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-1.5 leading-relaxed">
                 <ShieldAlert className="w-3.5 h-3.5 text-orange-500 shrink-0" />
-                <span>Công chứng bàn giao ngay sổ đỏ</span>
+                <span>Công chứng sẽ bàn giao sổ đỏ theo tiến độ ra bìa của VPĐK đất đai</span>
               </li>
               <li className="flex items-center gap-1.5 leading-relaxed">
                 <ShieldAlert className="w-3.5 h-3.5 text-orange-500 shrink-0" />
