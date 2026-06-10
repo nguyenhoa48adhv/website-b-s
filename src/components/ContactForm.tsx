@@ -143,7 +143,7 @@ export default function ContactForm({
               </div>
               <div>
                 <span className="block text-slate-400 text-[10px] font-bold uppercase tracking-wider font-mono">Trụ sở chính</span>
-                <span className="text-sm font-bold text-slate-755 leading-snug">Số 85 Hàm Nghi, Phường Trần Phú, Thành phố Hà Tĩnh, Tỉnh Hà Tĩnh</span>
+                <span className="text-sm font-bold text-slate-755 leading-snug">Xã Nghi Xuân, tỉnh Hà Tĩnh</span>
               </div>
             </div>
           </div>
