@@ -24,7 +24,7 @@ export interface LandListing {
   contactName: string;
   contactPhone: string;
   legalStatus: string; // e.g., "Sổ đỏ riêng, pháp lý 100%"
-  direction: string; // e.g., "Đông Nam"
+  direction: string; // e.g., "Đông Nam 1"
   width?: number; // mặt tiền
   length?: number; // chiều dài
   isFeatured?: boolean;
